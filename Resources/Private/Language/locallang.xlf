@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-29T11:21:34Z"
+	      product-name="formule">
+		<header/>
+		<body>
+			<!-- Wizard -->
+			<trans-unit id="wizard.title">
+				<source>Variety of forms</source>
+			</trans-unit>
+			<trans-unit id="wizard.description">
+				<source>Render a variety of forms template based such as contact form, registration form, etc...</source>
+			</trans-unit>
+
+			<!-- Tabs -->
+			<trans-unit id="tab.general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="tab.emailAdmin">
+				<source>Email Admin</source>
+			</trans-unit>
+			<trans-unit id="tab.emailUser">
+				<source>Email User</source>
+			</trans-unit>
+			<trans-unit id="tab.feedback">
+				<source>Feedback</source>
+			</trans-unit>
+			<trans-unit id="tab.sender">
+				<source>Sender</source>
+			</trans-unit>
+
+			<!-- Settings -->
+			<trans-unit id="settings.template">
+				<source>Template to be used</source>
+			</trans-unit>
+			<trans-unit id="settings.redirectPid">
+				<source>Redirect page after submit</source>
+			</trans-unit>
+			<trans-unit id="settings.summary">
+				<source>Summary</source>
+			</trans-unit>
+			<trans-unit id="settings.emailRecipient">
+				<source>Email Recipient (if empty no email will be sent)</source>
+			</trans-unit>
+			<trans-unit id="settings.nameFrom">
+				<source>Name From</source>
+			</trans-unit>
+			<trans-unit id="settings.emailFrom">
+				<source>Email From</source>
+			</trans-unit>
+			<trans-unit id="settings.emailCc">
+				<source>Email CC</source>
+			</trans-unit>
+			<trans-unit id="settings.emailBcc">
+				<source>Email BCC</source>
+			</trans-unit>
+			<trans-unit id="settings.emailSubject">
+				<source>Email subject</source>
+			</trans-unit>
+			<trans-unit id="settings.emailBody">
+				<source>Email body</source>
+			</trans-unit>
+			<trans-unit id="settings.feedbackMessage">
+				<source>Feedback Message</source>
+			</trans-unit>
+
+			<!-- Custom field "summary" -->
+			<trans-unit id="summary.template.used">
+				<source>Template used</source>
+			</trans-unit>
+			<trans-unit id="summary.fields">
+				<source>Fields detected</source>
+			</trans-unit>
+			<trans-unit id="summary.mandatory.fields">
+				<source>Mandatory fields</source>
+			</trans-unit>
+			<trans-unit id="summary.spam.protection">
+				<source>Spam protection</source>
+			</trans-unit>
+			<trans-unit id="summary.persisted.data">
+				<source>Persisted data</source>
+			</trans-unit>
+			<trans-unit id="summary.persisted.to">
+				<source>persisted to table</source>
+			</trans-unit>
+			<trans-unit id="summary.yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="summary.no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="summary.missing.template">
+				<source>No template selected yet</source>
+			</trans-unit>
+
+			<!-- Custom fields warning, template, token -->
+			<trans-unit id="warning">
+				<source>Warning</source>
+			</trans-unit>
+			<trans-unit id="warning.missing.tca">
+				<source>Missing TCA for table</source>
+			</trans-unit>
+			<trans-unit id="warning.missing.field">
+				<source>Missing TCA configuration for</source>
+			</trans-unit>
+			<trans-unit id="warning.mapping.necessary">
+				<source>Mapping maybe necessary.</source>
+			</trans-unit>
+			<trans-unit id="template.body">
+				<source>Body already is configured in the template</source>
+			</trans-unit>
+			<trans-unit id="template.message">
+				<source>Message is already configured in the template</source>
+			</trans-unit>
+			<trans-unit id="token">
+				<source>Token</source>
+			</trans-unit>
+
+			<!--TypoScript -->
+			<trans-unit id="newsletter.new">
+				<source>Newsletter new subscription</source>
+			</trans-unit>
+			<trans-unit id="newsletter.edit">
+				<source>Newsletter edit preferences</source>
+			</trans-unit>
+
+			<!-- Frontend fields -->
+			<trans-unit id="name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="mobile">
+				<source>Mobile number</source>
+			</trans-unit>
+			<trans-unit id="subject">
+				<source>Subject</source>
+			</trans-unit>
+			<trans-unit id="message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="first_name">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="last_name">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="submit">
+				<source>Submit Form</source>
+			</trans-unit>
+			<trans-unit id="is_newsletter_active">
+				<source>Receive newsletter?</source>
+			</trans-unit>
+
+			<!-- Frontend contact form -->
+			<trans-unit id="contact.form">
+				<source>Contact Form</source>
+			</trans-unit>
+			<trans-unit id="contact.limit.met">
+				<source>You have reached the limit.</source>
+			</trans-unit>
+			<trans-unit id="contact.limit.total.characters">
+				<source>140 characters left.</source>
+			</trans-unit>
+			<trans-unit id="contact.limit.characters">
+				<source>characters left.</source>
+			</trans-unit>
+
+			<!-- Frontend newsletter -->
+			<trans-unit id="newsletter.register">
+				<source>Register</source>
+			</trans-unit>
+			<trans-unit id="newsletter.update">
+				<source>Update my subscription</source>
+			</trans-unit>
+			<trans-unit id="newsletter.delete">
+				<source>Delete my subscription</source>
+			</trans-unit>
+
+			<!-- Frontend message -->
+			<trans-unit id="message.update.success">
+				<source>Your settings have been successfully updated.</source>
+			</trans-unit>
+			<trans-unit id="message.create.success">
+				<source>We have successfully stored your data.</source>
+			</trans-unit>
+			<trans-unit id="confirm.delete">
+				<source>Are you sure you want to delete your account?</source>
+			</trans-unit>
+			<trans-unit id="newsletter.admin.body1">
+				<source><![CDATA[Hello Admin,
+
+A user filled out the newsletter subscription form on %s by %s.
+
+An email has been sent to him to confirm his email address.
+
+To see see this user click %s and search for "%s".]]></source>
+			</trans-unit>
+			<trans-unit id="newsletter.user.body1">
+				<source><![CDATA[%s %s,
+
+We have received your request via our subscription form. Please confirm your email address by clicking %s.
+
+If you think this is an error, please ignore this email.]]></source>
+			</trans-unit>
+			<trans-unit id="link">
+				<source>this link</source>
+			</trans-unit>
+			<trans-unit id="message.feedback">
+				<source>We have received your message. We have sent you an email to confirm your email address.</source>
+			</trans-unit>
+
+			<!-- Frontend error -->
+			<trans-unit id="error.occurred">
+				<source>Following error(s) occurred:</source>
+			</trans-unit>
+			<trans-unit id="error.required">
+				<source>Required field.</source>
+			</trans-unit>
+			<trans-unit id="error.email.unique">
+				<source>This email has already been registred. Please choose another one.</source>
+			</trans-unit>
+			<trans-unit id="error.email.format">
+				<source>Format email is not valid.</source>
+			</trans-unit>
+			<trans-unit id="error.password.not.corresponding">
+				<source>Password does not correspond.</source>
+			</trans-unit>
+			<trans-unit id="error.password.too.short">
+				<source>Password is too short.</source>
+			</trans-unit>
+			<trans-unit id="error.name.identical">
+				<source>First name and last name must be different.</source>
+			</trans-unit>
+			<trans-unit id="token.invalid">
+				<source>I could not retrieve valid data.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

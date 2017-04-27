@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-12-29T11:21:34Z"
+	      product-name="formule">
+		<header/>
+		<body>
+			<!-- Wizard -->
+			<trans-unit id="wizard.title">
+				<target>Variété de formulaire</target>
+			</trans-unit>
+			<trans-unit id="wizard.description">
+				<target>A partir d'un template, affiche divers types de formulaire comme un formulaire de contact, inscription à la newsletter, etc...</target>
+			</trans-unit>
+
+			<!-- Tabs -->
+			<trans-unit id="tab.general">
+				<target>Général</target>
+			</trans-unit>
+			<trans-unit id="tab.emailAdmin">
+				<target>Email Admin</target>
+			</trans-unit>
+			<trans-unit id="tab.emailUser">
+				<target>Email Utilisateur</target>
+			</trans-unit>
+			<trans-unit id="tab.feedback">
+				<target>Feedback</target>
+			</trans-unit>
+			<trans-unit id="tab.sender">
+				<target>Expéditeur</target>
+			</trans-unit>
+
+			<!-- Settings -->
+			<trans-unit id="settings.template">
+				<target>Template utilisé</target>
+			</trans-unit>
+			<trans-unit id="settings.redirectPid">
+				<target>Page de redirection après soumission</target>
+			</trans-unit>
+			<trans-unit id="settings.summary">
+				<target>Résumé</target>
+			</trans-unit>
+			<trans-unit id="settings.emailRecipient">
+				<target>Email destinataire (aucun email ne partira si la valeur est vide)</target>
+			</trans-unit>
+			<trans-unit id="settings.nameFrom">
+				<target>Nom expéditeur</target>
+			</trans-unit>
+			<trans-unit id="settings.emailFrom">
+				<target>Email expéditeur</target>
+			</trans-unit>
+			<trans-unit id="settings.emailCc">
+				<target>Email CC</target>
+			</trans-unit>
+			<trans-unit id="settings.emailBcc">
+				<target>Email BCC</target>
+			</trans-unit>
+			<trans-unit id="settings.emailSubject">
+				<target>Email sujet</target>
+			</trans-unit>
+			<trans-unit id="settings.emailBody">
+				<target>Email message</target>
+			</trans-unit>
+			<trans-unit id="settings.feedbackMessage">
+				<target>Message de feedback</target>
+			</trans-unit>
+
+			<!-- Custom field "summary" -->
+			<trans-unit id="summary.template.used">
+				<target>Template utilisé</target>
+			</trans-unit>
+			<trans-unit id="summary.fields">
+				<target>Champs détectés</target>
+			</trans-unit>
+			<trans-unit id="summary.mandatory.fields">
+				<target>Champs obligatoires</target>
+			</trans-unit>
+			<trans-unit id="summary.spam.protection">
+				<target>Protection anti-spam</target>
+			</trans-unit>
+			<trans-unit id="summary.persisted.data">
+				<target>Donné persistée</target>
+			</trans-unit>
+			<trans-unit id="summary.persisted.to">
+				<target>persisté dans</target>
+			</trans-unit>
+			<trans-unit id="summary.yes">
+				<target>Oui</target>
+			</trans-unit>
+			<trans-unit id="summary.no">
+				<target>Non</target>
+			</trans-unit>
+			<trans-unit id="summary.missing.template">
+				<target>Pas de template sélectionné</target>
+			</trans-unit>
+
+			<!-- Custom field "warning" -->
+			<trans-unit id="warning">
+				<target>Avertissements</target>
+			</trans-unit>
+			<trans-unit id="warning.missing.tca">
+				<target>TCA manquant pour la table</target>
+			</trans-unit>
+			<trans-unit id="warning.missing.field">
+				<target>Configuration TCA manquant pour</target>
+			</trans-unit>
+			<trans-unit id="warning.mapping.necessary">
+				<target>Mapping probablement nécessaire.</target>
+			</trans-unit>
+			<trans-unit id="template.body">
+				<target>Le corps du message est configuré dans le template</target>
+			</trans-unit>
+			<trans-unit id="template.message">
+				<target>Le message est configuré dans le template</target>
+			</trans-unit>
+
+			<!--TypoScript -->
+			<trans-unit id="newsletter.new">
+				<target>Newsletter nouvelle inscription</target>
+			</trans-unit>
+			<trans-unit id="newsletter.edit">
+				<target>Newsletter édition inscription</target>
+			</trans-unit>
+
+			<!-- Frontend fields -->
+			<trans-unit id="name">
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="email">
+				<target>Email</target>
+			</trans-unit>
+			<trans-unit id="mobile">
+				<target>Numéro mobile</target>
+			</trans-unit>
+			<trans-unit id="subject">
+				<target>Sujet</target>
+			</trans-unit>
+			<trans-unit id="message">
+				<target>Message</target>
+			</trans-unit>
+			<trans-unit id="first_name">
+				<target>Prénom</target>
+			</trans-unit>
+			<trans-unit id="last_name">
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="submit">
+				<target>Envoyer</target>
+			</trans-unit>
+			<trans-unit id="is_newsletter_active">
+				<target>Recevoir la newsletter?</target>
+			</trans-unit>
+
+			<!-- Frontend contact form -->
+			<trans-unit id="contact.form">
+				<target>Formulaire de contact</target>
+			</trans-unit>
+			<trans-unit id="contact.limit.met">
+				<target>Vous avez atteint la limite</target>
+			</trans-unit>
+			<trans-unit id="contact.limit.total.characters">
+				<target>Encore 140 caractères.</target>
+			</trans-unit>
+			<trans-unit id="contact.limit.characters">
+				<target>caractères encore possibles.</target>
+			</trans-unit>
+
+			<!-- Frontend newsletter -->
+			<trans-unit id="newsletter.register">
+				<target>S'inscrire</target>
+			</trans-unit>
+			<trans-unit id="newsletter.update">
+				<target>Modifier mon inscription</target>
+			</trans-unit>
+			<trans-unit id="newsletter.delete">
+				<target>Supprimer mon inscription</target>
+			</trans-unit>
+
+			<!-- Frontend message -->
+			<trans-unit id="message.update.success">
+				<target>Vos réglages ont été correctement enregistrés.</target>
+			</trans-unit>
+			<trans-unit id="message.create.success">
+				<target>Nous avons correctement enregistré vos données.</target>
+			</trans-unit>
+			<trans-unit id="confirm.delete">
+				<target>Êtes-vous sûr de vouloir supprimer votre compte?</target>
+			</trans-unit>
+			<trans-unit id="newsletter.admin.body1">
+				<target><![CDATA[Hello Admin,
+
+Un visiteur a rempli le formulaire d'inscription à la newsletter depuis %s avec %s.
+
+Un email lui a été envoyé pour confirmation de son email adresse.
+
+Pour retrouver son contact, veuillez cliquer sur %s et chercher "%s" comme occurrence.]]></target>
+			</trans-unit>
+			<trans-unit id="newsletter.user.body1">
+				<target><![CDATA[%s %s,
+
+Nous avons reçu votre inscription à notre newsletter via le formulaire de notre site. Veuillez confirmer votre adresse email en cliquant %s.
+
+Si vous pensez avoir reçu cet email par erreur, veuillez ignorer ce message.]]></target>
+			</trans-unit>
+			<trans-unit id="link">
+				<target>ce lien</target>
+			</trans-unit>
+			<trans-unit id="message.feedback">
+				<target>Merci. Nous avons bien reçu votre inscription. Nous vous avons envoyé un email qui contient un lien pour vérifier votre adresse email.</target>
+			</trans-unit>
+
+			<!-- Frontend error -->
+			<trans-unit id="error.occurred">
+				<target>Les erreurs suivantes sont survenues.</target>
+			</trans-unit>
+			<trans-unit id="error.required">
+				<target>Champ requis.</target>
+			</trans-unit>
+			<trans-unit id="error.email.unique">
+				<target>Cet email est déjà enregistré. Veuillez choisir un autre.</target>
+			</trans-unit>
+			<trans-unit id="error.email.format">
+				<target>Format de l'email non valide.</target>
+			</trans-unit>
+			<trans-unit id="error.password.not.corresponding">
+				<target>Les mots de passe ne correspondent pas.</target>
+			</trans-unit>
+			<trans-unit id="error.password.too.short">
+				<target>Le mot de passe est trop court.</target>
+			</trans-unit>
+			<trans-unit id="error.name.identical">
+				<target>Prénom et nom doivent être différent.</target>
+			</trans-unit>
+			<trans-unit id="token.invalid">
+				<target>Impossible de charger les informations.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
