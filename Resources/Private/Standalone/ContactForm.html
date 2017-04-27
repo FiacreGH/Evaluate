@@ -9,30 +9,55 @@
 	<fo:loadAssets/>
 
 	<style>
-		.red {
-			color: red;
+		.rating {
+			float:left;
+			width:300px;
+		}
+		.rating span { float:right; position:relative; }
+		.rating span input {
+			position:absolute;
+			top:0px;
+			left:0px;
+			opacity:0;
+		}
+		.rating span label {
+			display:inline-block;
+			width:30px;
+			height:30px;
+			text-align:center;
+			color:#FFF;
+			background:#ccc;
+			font-size:30px;
+			margin-right:2px;
+			line-height:30px;
+			border-radius:50%;
+			-webkit-border-radius:50%;
+		}
+		.rating span:hover ~ span label,
+		.rating span:hover label,
+		.rating span.checked label,
+		.rating span.checked ~ span label {
+			background:#F90;
+			color:#FFF;
 		}
 	</style>
 
 	<fo:loadAssets>
-		<script>
-			$(document).ready(function() {
-				$('#characterLeft').text('{f:translate(key:"contact.limit.total.characters")}');
-				$('#message').keydown(function() {
-					var max = 140;
-					var len = $(this).val().length;
-					if (len >= max) {
-						$('#characterLeft').text('{f:translate(key:"contact.limit.met")}');
-						$('#characterLeft').addClass('red');
-						$('#btnSubmit').addClass('disabled');
-					}
-					else {
-						var numberOfCharacters = max - len;
-						$('#characterLeft').text(numberOfCharacters + ' {f:translate(key:"contact.limit.characters")}');
-						$('#btnSubmit').removeClass('disabled');
-						$('#characterLeft').removeClass('red');
-					}
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Check Radio-box
+				$(".rating input:radio").attr("checked", false);
+
+				$('.rating input').click(function () {
+					$(".rating span").removeClass('checked');
+					$(this).parent().addClass('checked');
 				});
+
+				$('input:radio').change(
+						function(){
+							var userRating = this.value;
+						});
 			});
 		</script>
 	</fo:loadAssets>
@@ -46,6 +71,18 @@
 			<f:if condition="{fo:context.isDevelopment()}">
 				<f:render section="FormError" partial="Form/Error" arguments="{_all}"/>
 			</f:if>
+
+
+
+			<div class="rating">
+				<span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+				<span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+				<span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+				<span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+				<span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+			</div>
+
+
 
 			<div class="form-group {fo:hasError(field: 'name')}">
 				<input type="text"
