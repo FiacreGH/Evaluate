@@ -11,7 +11,7 @@
 	<style>
 		.rating {
 			float:left;
-			width:300px;
+			width:200px;
 		}
 		.rating span { float:right; position:relative; }
 		.rating span input {
@@ -23,14 +23,14 @@
 		.rating span label {
 			content: "\2605";
 			display:inline-block;
-			width:30px;
-			height:30px;
+			width:20px;
+			height:20px;
 			text-align:center;
 			color:#FFF;
 			background:#ccc;
-			font-size:30px;
+			font-size:20px;
 			margin-right:2px;
-			line-height:30px;
+			line-height:20px;
 			border-radius:50%;
 			-webkit-border-radius:50%;
 		}
@@ -65,15 +65,80 @@
 
 	<div class="form-area">
 		<f:form action="submit" controller="Form" additionalAttributes="{role: 'form'}" method="post">
+
 			<h3>
-				<f:translate key="contact.form"/>
+				Votre appréciation du travail qui a été fait
 			</h3>
 
-			<f:if condition="{fo:context.isDevelopment()}">
-				<f:render section="FormError" partial="Form/Error" arguments="{_all}"/>
-			</f:if>
+			<div class="col-md-12">
+				<span>Comment avez-vous apprécier le travail de façon général sur ce projet?</span>
+			</div>
+
+			<div class="rating">
+				<span><input type="radio" name="rating" id="work_str5" value="5"><label for="work_str5"></label></span>
+				<span><input type="radio" name="rating" id="work_str4" value="4"><label for="work_str4"></label></span>
+				<span><input type="radio" name="rating" id="work_str3" value="3"><label for="work_str3"></label></span>
+				<span><input type="radio" name="rating" id="work_str2" value="2"><label for="work_str2"></label></span>
+				<span><input type="radio" name="rating" id="work_str1" value="1"><label for="work_str1"></label></span>
+				<span>Note : &nbsp</span>
+			</div>
 
 
+			<div class="form-group">
+				<textarea class="form-control"
+				          id="work_remark"
+				          name="work_remark"
+				          placeholder="Complément / remarque"
+				          rows="3">{values.work_remark}</textarea>
+			</div>
+
+			<div class="col-md-12">
+				<span>Comment avez-vous apprécier la communication sur ce projet?</span>
+			</div>
+
+			<div class="rating">
+				<span><input type="radio" name="rating" id="com_str5" value="5"><label for="com_str5"></label></span>
+				<span><input type="radio" name="rating" id="com_str4" value="4"><label for="com_str4"></label></span>
+				<span><input type="radio" name="rating" id="com_str3" value="3"><label for="com_str3"></label></span>
+				<span><input type="radio" name="rating" id="com_str2" value="2"><label for="com_str2"></label></span>
+				<span><input type="radio" name="rating" id="com_str1" value="1"><label for="com_str1"></label></span>
+				<span>Note : &nbsp</span>
+			</div>
+
+
+			<div class="form-group ">
+				<textarea class="form-control"
+				          id="com_remark"
+				          name="com_remark"
+				          placeholder="Complément / remarque"
+				          rows="3">{values.com_remark}</textarea>
+			</div>
+
+			<div class="col-md-12">
+				<span>Comment avez-vous apprécier la ponctualité?</span>
+			</div>
+
+			<div class="rating">
+				<span><input type="radio" name="rating" id="punctuality_str5" value="5"><label for="punctuality_str5"></label></span>
+				<span><input type="radio" name="rating" id="punctuality_str4" value="4"><label for="punctuality_str4"></label></span>
+				<span><input type="radio" name="rating" id="punctuality_str3" value="3"><label for="punctuality_str3"></label></span>
+				<span><input type="radio" name="rating" id="punctuality_str2" value="2"><label for="punctuality_str2"></label></span>
+				<span><input type="radio" name="rating" id="punctuality_str1" value="1"><label for="punctuality_str1"></label></span>
+				<span>Note : &nbsp</span>
+			</div>
+
+
+			<div class="form-group">
+				<textarea class="form-control"
+				          id="punctuality_remark"
+				          name="punctuality_remark"
+				          placeholder="Complément / remarque"
+				          rows="3">{values.punctuality_remark}</textarea>
+			</div>
+
+			<div class="col-md-12">
+				<span>Etes vous satisfait du travail fait de manière globale ?</span>
+			</div>
 
 			<div class="rating">
 				<span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
@@ -81,63 +146,30 @@
 				<span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
 				<span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
 				<span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+				<span>Note : &nbsp</span>
 			</div>
 
-
-
-			<div class="form-group {fo:hasError(field: 'name')}">
-				<input type="text"
-				       class="form-control"
-				       id="name"
-				       name="name"
-				       value="{values.name}"
-				       placeholder="{f:translate(key:'name')}"
-				       required="required"/>
-				<span class="help-block">{fo:message.error(field: 'name')}</span>
-			</div>
-			<div class="form-group {fo:hasError(field: 'email')}">
-				<input type="text"
-				       class="form-control"
-				       id="email"
-				       name="email"
-				       value="{values.email}"
-				       placeholder="{f:translate(key:'email')}"
-				       required="required"/>
-				<span class="help-block">{fo:message.error(field: 'email')}</span>
-			</div>
-			<div class="form-group {fo:hasError(field: 'subject')}">
-				<input type="text"
-				       class="form-control"
-				       id="subject"
-				       name="subject"
-				       value="{values.subject}"
-				       placeholder="{f:translate(key:'subject')}"
-				       required="required"/>
-				<span class="help-block">{fo:message.error(field: 'subject')}</span>
-			</div>
-			<div class="form-group {fo:hasError(field: 'message')}">
+			<div class="form-group">
 				<textarea class="form-control"
-				          id="message"
-				          name="message"
-				          placeholder="{f:translate(key:'message')}"
-				          maxlength="140"
-				          rows="7">{values.message}</textarea>
-				<span class="help-block">{fo:message.error(field: 'message')}</span>
-				<p id="characterLeft" class="help-block">
-					<f:translate key="contact.limit"/>
-				</p>
+				          id="global_remark"
+				          name="global_remark"
+				          placeholder="Complément / remarque"
+				          rows="3">{values.global_remark}</textarea>
 			</div>
 
-			<input type="submit" value="{f:translate(key:'submit')}" class="btn btn-primary pull-right">
+			<div class="col-md-12">
+				<span>Qu'est-ce que vous voudriez voir améliorer pour un prochain projet, sur le plan technique ou de façon générale?</span>
+			</div>
 
-			<f:comment><!-- The only mandatory field --></f:comment>
-			<f:form.hidden name="values" value="{contentElement.uid}"/>
+			<div class="form-group">
+				<textarea class="form-control"
+				          id="suggestion"
+				          name="suggestion"
+				          placeholder="Complément / remarque"
+				          rows="3">{values.suggestion}</textarea>
+			</div>
 
-			<f:comment><!-- VH to limit bots annoyance (optional) --></f:comment>
-			<fo:honeyPot/>
-
-			<f:comment><!--Display hint in Development context (optional) --></f:comment>
-			<fo:message.development/>
+			<input type="submit" value="Soumettre" class="btn btn-primary pull-right">
 
 		</f:form>
 	</div>
